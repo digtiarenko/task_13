@@ -24,5 +24,11 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "@mdi/font": "^6.7.96",
+    "axios": "^0.27.2",
+    "basiclightbox": "^5.0.4",
+    "lodash.debounce": "^4.0.8"
   }
 }

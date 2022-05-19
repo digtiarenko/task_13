@@ -1,7 +1,114 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 220, 220);
+  padding-bottom: 50px;
+}
+
+input {
+  width: 480px;
+  padding: 12px 20px;
+  margin: 0;
+
+  font-size: 20px !important;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.search {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #252222;
+  background-color: #fafafa;
+  outline-color: #3c4245;
+}
+
+.btn-primary {
+  margin-left: 20px;
+}
+
+.button {
+  margin: 0 auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+/* gallery List */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 400px));
+  grid-gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.gallery li {
+  /* height: 450px; */
+  overflow: hidden;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-item {
+  color: #5d5d5d;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}
+
+.stats-item:hover,
+.stats-item:focus {
+  color: rgb(140, 197, 134);
+  transform: scale(1.2);
+}
+
+.material-icons {
+  font-size: 28px;
+  text-align: center;
+}
