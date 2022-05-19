@@ -2,13 +2,9 @@ import './sass/main.scss';
 import refs from './js/refs';
 import fetchImages from './js/fetch';
 
-import modal from './js/modal';
 import debounce from 'lodash.debounce';
 import template from './templates/image-card_template';
 import modalOpen from './js/modal';
-
-// додати модалку
-// додати безкінечну прокрутку при Intersection Observer.
 
 let page = 1;
 let searchQuery;
