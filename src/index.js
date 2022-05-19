@@ -37,7 +37,7 @@ function handleSearch(event) {
   }
 
   fetchImages(searchQuery, page).then(({ hits }) => {
-    console.log(hits), handleMarkup(hits);
+    handleMarkup(hits);
   });
 }
 
