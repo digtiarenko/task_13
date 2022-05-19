@@ -1,4 +1,4 @@
-import 'basicLightbox/src/styles/main.scss';
+import 'basiclightbox/src/styles/main.scss';
 import * as basicLightbox from 'basiclightbox';
 
 function modalOpen(largeImageURL) {
